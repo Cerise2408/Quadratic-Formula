@@ -22,6 +22,6 @@ def square():
     f1 = e1/(2*a)
     f2 = e2/(2*a)
 
-    print('/nYour two roots are:', f1, 'and', f2)
+    print('\n x = ', f1, ',x = ', f2)
 
 square()
