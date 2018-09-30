@@ -1,3 +1,4 @@
+
 import time
 import math
 def answerer():
@@ -16,12 +17,17 @@ def square():
     c = float(input('\nWhat is the constant in your equation?'))
     print("\nThis is your equation: ",a,"x\xb2 + " ,b,"x + " ,c, sep='')
 
-    d = (b**2)-(4*a*c)
-    e1 = (-b)+math.sqrt(d)
-    e2 = (-b)-math.sqrt(d)
-    f1 = e1/(2*a)
-    f2 = e2/(2*a)
+    d = b**2
+    e = 4*a*c
+    f = d-e
+    g = f**(1/2.0)
+    h1 =(-b)+g
+    h2 =(-b)-g
+    i = 2*a
+    j1 = h1/i
+    j2 = h2/i
 
-    print('\n x = ', f1, ',x = ', f2)
+    print('\nx = ', j1, ', x = ', j2)
 
 square()
+
