@@ -1,6 +1,5 @@
-
 import time
-import math
+import cmath
 def answerer():
     answer = str(input('\nWould you like to solve another equation?(yes/no)'))
     if answer == 'yes':
@@ -20,14 +19,17 @@ def square():
     d = b**2
     e = 4*a*c
     f = d-e
-    g = f**(1/2.0)
+    g = cmath.sqrt(f)
     h1 =(-b)+g
     h2 =(-b)-g
     i = 2*a
-    j1 = h1/i
-    j2 = h2/i
+    j = h1/i
+    k = h2/i
+    l = (j.real, j.imag)
+    l1 = j.real
+    m = (k.real, k.imag)
+    m1 = k.real
 
-    print('\nx = ', j1, ', x = ', j2)
+    print('\nx = ', l1, ', x = ', m1)
 
 square()
-
